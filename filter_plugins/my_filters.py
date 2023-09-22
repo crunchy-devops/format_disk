@@ -1,5 +1,6 @@
 #!/usr/bin/python
 from natsort import natsorted
+import subprocess
 import re
 
 class FilterModule(object):
