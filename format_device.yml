@@ -1,0 +1,11 @@
+---
+- name: format disk 
+  become: true
+  hosts: local
+  tasks:
+    - name: get disk structure
+      command: fdisk -l 
+      register: get_disk
+    - name: 
+      debug:
+        msg: "device : {{ get_disk.stdout | get_device }}"
