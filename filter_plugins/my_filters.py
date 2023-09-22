@@ -24,6 +24,14 @@ class FilterModule(object):
                     break
         return list_of_version
     def get_device(self, list_device):
-        return list_device
+        disk = []
+        device = []
+        flag = 0 
+        type_format = ['swap', 'ext4','xfs','dos', 'squashfs']
+        line = list_device.split('\n')
+        return line
+
+
+
 
 
